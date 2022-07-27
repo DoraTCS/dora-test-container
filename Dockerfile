@@ -1,3 +1,3 @@
-FROM golang:1.17.1-buster
+FROM bash:5.1.16
 
 CMD cat /mnt/input/* | base64 | tr -d '\n' > /mnt/output
